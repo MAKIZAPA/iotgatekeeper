@@ -1,0 +1,31 @@
+{
+  "name": "iot-gatekeeper",
+  "version": "1.0.0",
+  "description": "Hardware-in-the-Loop Simulator for IoT Gatekeeper v1.0 (UNFV - FIEI)",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "dev": "./node_modules/.bin/concurrently -k -p \"[{name}]\" -n \"SERVER,CLIENT\" -c \"yellow.bold,cyan.bold\" \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "./node_modules/.bin/tsx watch server/index.ts",
+    "dev:client": "npm --prefix client run dev",
+    "build": "npm --prefix client install && npm --prefix client run build",
+    "start": "tsx server/index.ts",
+    "typecheck": "./node_modules/.bin/tsc --noEmit && npm --prefix client run typecheck"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "socket.io": "^4.8.1",
+    "tsx": "^4.19.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.10.2",
+    "concurrently": "^9.1.0",
+    "typescript": "^5.7.2"
+  }
+}

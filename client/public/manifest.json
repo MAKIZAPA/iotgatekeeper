@@ -1,0 +1,22 @@
+{
+  "short_name": "Gatekeeper",
+  "name": "IoT Gatekeeper v1.0",
+  "description": "Consola Móvil de Acreditación y Monitoreo Biométrico - UNFV FIEI",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/mobile",
+  "background_color": "#0B0D10",
+  "theme_color": "#0B0D10",
+  "display": "standalone",
+  "orientation": "portrait"
+}

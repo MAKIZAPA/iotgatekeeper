@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#121620" />
+      <stop offset="100%" stop-color="#0B0D11" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60A5FA" />
+      <stop offset="100%" stop-color="#2563EB" />
+    </linearGradient>
+  </defs>
+
+  <!-- Base Rounded Background -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+  <rect x="12" y="12" width="488" height="488" rx="100" fill="none" stroke="#222733" stroke-width="6" opacity="0.6" />
+
+  <!-- Shield Body -->
+  <path d="M256 90 L380 144 V264 C380 340 326 406 256 430 C186 406 132 340 132 264 V144 Z"
+        fill="#161B26" stroke="#3B82F6" stroke-width="12" stroke-linejoin="round" />
+
+  <!-- Inner Lock Shackle -->
+  <path d="M216 230 V194 C216 172 234 154 256 154 C278 154 296 172 296 194 V230"
+        fill="none" stroke="url(#accentGrad)" stroke-width="16" stroke-linecap="round" />
+
+  <!-- Lock Body -->
+  <rect x="200" y="230" width="112" height="96" rx="16" fill="url(#accentGrad)" />
+
+  <!-- Keyhole -->
+  <circle cx="256" cy="270" r="10" fill="#0B0D11" />
+  <path d="M252 270 L248 296 H264 L260 270 Z" fill="#0B0D11" />
+
+  <!-- Circuit Trace Accents -->
+  <circle cx="256" cy="380" r="8" fill="#10B981" />
+  <line x1="256" y1="340" x2="256" y2="372" stroke="#10B981" stroke-width="4" stroke-dasharray="4 4" />
+</svg>
